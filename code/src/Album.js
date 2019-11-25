@@ -10,7 +10,6 @@ export const Album = (props) => {
       <div className="albumCard">
         <div className="albumIcons">
           <img src="icons/heart.svg" alt="favourites" className="favIcon" />
-
           <div>
             <a href={props.url}><img className="iconPlay" src="icons/play.svg" alt="Play" /></a>
           </div>

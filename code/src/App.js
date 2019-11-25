@@ -1,8 +1,10 @@
 import React from 'react'
 import data from './data.json'
-import { Album } from './Album'
-import { Artist } from './Artist'
-import './app.css'
+import { Album } from './Album.js'
+import { Artist } from './Artist.js'
+import { Header } from './Header.js'
+
+
 
 
 // console.log(data)
@@ -11,8 +13,11 @@ const spotify = data.albums.items;
 
 export const App = () => {
   return (
+    <div id="containier">
+      <div>
+        <Header />
+      </div >
 
-    <section className="containier">
 
       {spotify.map(album => {
         return (
@@ -30,10 +35,11 @@ export const App = () => {
               )
             })}
           </Album>
+
         )
-      })
+
       })}
-        </section>
+    </div>
   );
 };
 

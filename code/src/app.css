@@ -1,9 +1,0 @@
-.container{
-  background: #1a1b1c;
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    justify-items: left;
-    max-width: 1500px;
-    padding: 20px 0 0 6%;
-}
