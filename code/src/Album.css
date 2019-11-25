@@ -1,0 +1,119 @@
+.container{
+ display: flex;
+justify-items: center;
+flex-wrap: wrap;
+justify-items: left;
+max-width: 1500px; 
+align-items: center;
+margin-left: 5%
+}
+
+/* styling- text */
+p{
+  margin: 0;
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #ffffff;
+  padding-top: 5px;
+}
+
+h3{
+margin: 0;
+font-family: Helvetica;
+color: #a0a0a0;
+  font-weight: bold;
+}
+
+.artistName a:link, .artistName a:visited {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+/*card*/
+.albumCard {
+ 
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 300px;
+  z-index: 1;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.albumCard:hover .albumIcons img {
+  display: inline-flex;
+}
+
+.albumCoverImage img {
+  position: absolute;
+  z-index: 2;
+}
+
+.albumCard:hover {
+  filter: brightness(30%);
+}
+
+.albumInfo{
+  width: 300px;
+  margin: 2px;
+  padding-top: 10px;
+}
+
+/*icons*/
+
+.albumIcons{
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  z-index: 3;
+  height: 100%;
+ 
+}
+
+.albumIcons:hover~.albumCoverImage img {
+  filter:brightness(30%);
+  background: rgba(0,0,0,0.5)
+}
+
+.favIcon, .iconPlay, .moreIcon {
+  align-self: center;
+  justify-self: center;
+  display: none; 
+}
+
+.favIcon {
+  margin-top:5px;
+  height: 35px;
+  width: 35px;
+}
+
+.iconPlay {
+  height: 80px;
+  width: 80px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.iconPlay:hover {
+  width: 55%;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  transform: scale(1.1);
+}
+
+.moreIcon:hover {
+
+  width: 35px;
+  width: 35px;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+
+.albumTitle .albumTitle {
+  color: #fff; 
+  text-decoration: none;
+}
+
+

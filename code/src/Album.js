@@ -1,25 +1,45 @@
-
 import React from 'react'
+import './Album.css'
 
 export const Album = (props) => {
   return (
-    <div className="container">
 
-      <article className="album">
-        <a href={props.url} className="albumlink">
-          <div className="albumCover">
-            <img src={props.image} alt="" className="albumCoverImage" />
-            <div className="albumIcons">
-              <img src="icons/heart.svg" alt="favourites" className="favIcon" />
-              <img src="icons/play.svg" alt="Play album" className="playIcon" />
-              <img src="icons/dots.svg" alt="More" className="moreIcon " />
-            </div>
+
+    <div>
+
+      <div className="albumCard">
+        <div className="albumIcons">
+          <img src="icons/heart.svg" alt="favourites" className="favIcon" />
+
+          <div>
+            <a href={props.url}><img className="iconPlay" src="icons/play.svg" alt="Play" /></a>
           </div>
-          <h2 className="album-title">{props.name}</h2 >
-        </a>
-        {props.children}
-      </article>
 
+          <img src="icons/dots.svg" alt="More" className="moreIcon" />
+        </div>
+
+
+        <div >
+          <img src={props.image} className="albumCoverImage" alt="Album cover" />
+        </div>
+
+        <div className="albumInfo">
+
+          <div className="albumTitle">
+            <a href={props.url}><p>{props.name}</p></a>
+          </div>
+
+          <div className="artistName">
+            <p>{props.children}</p>
+
+          </div>
+
+        </div>
+
+      </div>
     </div>
+
+
   )
 }
+
