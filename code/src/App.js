@@ -2,8 +2,7 @@ import React from 'react'
 import data from './data.json'
 import { Album } from './Album.js'
 import { Artist } from './Artist.js'
-import { Header } from './Header.js'
-
+import { Header } from './components/Header'
 
 
 
@@ -13,7 +12,7 @@ const spotify = data.albums.items;
 
 export const App = () => {
   return (
-    <div id="containier">
+    <div id="container">
       <div>
         <Header />
       </div >
