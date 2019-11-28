@@ -13,9 +13,9 @@ const spotify = data.albums.items;
 export const App = () => {
   return (
     <div id="container">
-      <div>
-        <Header />
-      </div >
+
+      <Header />
+
 
 
       {spotify.map(album => {

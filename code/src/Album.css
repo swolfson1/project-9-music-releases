@@ -3,9 +3,10 @@
 p{
   margin: 0;
   font-family: Helvetica;
-  font-size: 14px;
+  font-size: 20px;
   color: #ffffff;
   padding-top: 5px;
+  
 }
 
 h3{
@@ -26,7 +27,13 @@ header {
   max-width: 1280px;
   padding: 20px;
   width: 100%;
+  
+
 }
+header h1{
+text-align: center;
+}
+
 .artistName a:link, .artistName a:visited {
   color: #a0a0a0;
   text-decoration: none;
@@ -34,10 +41,9 @@ header {
 
 /*card*/
 .albumCard {
- 
+  display: flex;
   position: relative;
   flex-direction: column;
-  width: 300px;
   z-index: 1;
   justify-content: center;
   padding: 20px;
@@ -69,29 +75,30 @@ header {
   display: grid;
   grid-template-columns: 100px 100px 100px;
   z-index: 3;
-  position: relative; 
- 
+  position: absolute; 
+  display: flex;
+  justify-content: space-between;
+
+
 }
 
 .albumIcons:hover~.albumCoverImage img {
   filter:brightness(40%);
-  background: rgba(0, 0, 0, 0.253)
+ background: rgba(0, 0, 0, 0.253)
 }
 
 .favIcon, .iconPlay, .moreIcon {
   display: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,0,0,0.5);
+  margin: 20px;
+  transform: scale(1.0);
 }
 
 .favIcon {
   height: 80px;
   width: 80px;
+  filter: alpha(opacity=50);
 }
+
 
 .iconPlay {
   height: 80px;
@@ -100,6 +107,14 @@ header {
   filter: alpha(opacity=50);
   
 }
+.moreIcon{
+  height: 80px;
+  width: 80px;
+  margin-left: 8px;
+  filter: alpha(opacity=50);
+  
+}
+
 
 .iconPlay:hover {
   width: 80px;
@@ -108,20 +123,23 @@ header {
   transform: scale(1.1);
 }
 
-/.moreIcon:hover {
-  width: 80px;
-  height: 80px;
-  opacity: 1.0;
-  filter: alpha(opacity=100);
-} 
-
+  
 
 .albumTitle .albumTitle {
-  font-size: 14px;
+  font-size: 20px;
   color: #fff; 
   text-decoration: none;
 }
 
+@media only screen and (min-width: 370px) and (max-width: 670px) {
+  .albumCard{
+    margin-left: 10%;
+  }
+}
+
+header{
+  width: 100%;
+}
 
 @media only screen and (min-width: 670px) and (max-width: 914px) {
   header {
