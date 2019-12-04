@@ -78,13 +78,14 @@ text-align: center;
   position: absolute; 
   display: flex;
   justify-content: space-between;
-
-
+  left: 0;
+  right: 0;
+  padding-bottom: 75px;
 }
 
 .albumIcons:hover~.albumCoverImage img {
   filter:brightness(40%);
- background: rgba(0, 0, 0, 0.253)
+ background: rgb(194, 191, 191)
 }
 
 .favIcon, .iconPlay, .moreIcon {
@@ -96,7 +97,7 @@ text-align: center;
 .favIcon {
   height: 80px;
   width: 80px;
-  filter: alpha(opacity=50);
+  
 }
 
 
@@ -104,14 +105,14 @@ text-align: center;
   height: 80px;
   width: 80px;
   margin-left: 8px;
-  filter: alpha(opacity=50);
+ 
   
 }
 .moreIcon{
   height: 80px;
   width: 80px;
   margin-left: 8px;
-  filter: alpha(opacity=50);
+  
   
 }
 
@@ -119,7 +120,7 @@ text-align: center;
 .iconPlay:hover {
   width: 80px;
   opacity: .5;
-  filter: alpha(opacity=50);
+  filter: alpha(opacity=20);
   transform: scale(1.1);
 }
 
