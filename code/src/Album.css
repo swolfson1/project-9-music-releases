@@ -69,6 +69,10 @@ text-align: center;
   padding-top: 10px;
 }
 
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
 /*icons*/
 
 .albumIcons{
@@ -95,22 +99,22 @@ text-align: center;
 }
 
 .favIcon {
-  height: 80px;
-  width: 80px;
+  /* height: 80px; */
+  width: 55px;
   
 }
 
 
 .iconPlay {
-  height: 80px;
+  /* height: 80px; */
   width: 80px;
   margin-left: 8px;
  
   
 }
 .moreIcon{
-  height: 80px;
-  width: 80px;
+  /* height: 55px; */
+  width: 55px;
   margin-left: 8px;
   
   
