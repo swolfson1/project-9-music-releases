@@ -14,3 +14,6 @@ This week's project was about using React components to build a page which shows
 * CSS3
 * React
 * JSX
+
+##
+deployed site: https://project-9-music.netlify.com
