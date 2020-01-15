@@ -1,4 +1,4 @@
-#Project Music Realease 
+## Project Music Realease 
 
 This week's project was about using React components to build a page which shows new album and single releases using a Spotfiy API to call the the top albums and singles.
 
